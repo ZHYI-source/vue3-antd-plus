@@ -1,4 +1,4 @@
-# ZY·Admin【完整版】 Vue3-Antd-Plus
+# ZY·Admin【完整版】 Vue3-Antd-Plus (文档更新中)
 
 <p align="center">
   <a href="https://gitee.com/Z568_568/mango-blog-system.git">
@@ -72,16 +72,16 @@ Vue3-Antd-Plus是一个现代化的管理系统，提供了一系列功能丰富
 1. 克隆本仓库到本地
 
    ```
-   git clone https://gitee.com/Z568_568/ZY-Admin.git
+   https://gitee.com/Z568_568/vue3-antd-plus.git
    ```
 
-2. 安装依赖
+2. admin/client/server安装依赖
 
    ```
    npm install
    ```
 
-3. 本地启动
+3. admin/client/server本地启动
 
    ```
    npm run dev
@@ -92,7 +92,7 @@ Vue3-Antd-Plus是一个现代化的管理系统，提供了一系列功能丰富
    ```
    npm run build
    ```
-## 添加路由页面
+## admin添加路由页面
 
 ```
 /**
@@ -121,32 +121,17 @@ Vue3-Antd-Plus是一个现代化的管理系统，提供了一系列功能丰富
  *
  */
 ```
-
-## 配置权限
-
-```js
-    // 需要根据用户单独从后端那权限表
-        let perms = {
-            admin: ['*'],
-            test: [
-                'sys:user:list',
-                'sys:user:create',
-                'sys:user:update',
-                'sys:user:delete',
-            ],
-        }
-
-```
+ 
 ....
 
 
 ## 贡献
 
-欢迎对ZY·Admin项目的改进和完善，如果您发现任何错误或有任何建议，请随时提交问题和拉取请求。
+欢迎对Vue3-Antd-Plus项目的改进和完善，如果您发现任何错误或有任何建议，请随时提交问题和拉取请求。
 
 ## 版权
 
-ZY·Admin是一个开源项目，根据MIT许可证发布。有关更多信息，请参阅LICENSE文件。
+Vue3-Antd-Plus是一个开源项目，根据MIT许可证发布。有关更多信息，请参阅LICENSE文件。
 
 ## 联系方式
 
