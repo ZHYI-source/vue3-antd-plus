@@ -1,30 +1,31 @@
-# ZY·Admin【简洁版】
+# ZY·Admin【完整版】 Vue3-Antd-Plus
 
 <p align="center">
   <a href="https://gitee.com/Z568_568/mango-blog-system.git">
     <img src="doc/logo.png" alt="Logo" width="150" height="210">
   </a>
 
-<h3 align="center">" 🔥 ZY·Admin "</h3>
+<h3 align="center">" 🔥 Vue3-Antd-Plus "</h3>
   <p align="center">
-    基于 Vue3 + js 现代化的管理系统【简洁版】
+    基于 Vue3 + js 现代化的管理系统【完整版】
     <br />
     <a href="https://gitee.com/Z568_568/ZY-Admin.git" target="_blank"><strong>探索本项目的源码 »</strong></a>
     <br />
-<a href='https://gitee.com/Z568_568/ZY-Admin/stargazers'><img src='https://gitee.com/Z568_568/ZY-Admin/badge/star.svg?theme=dark' alt='star'></img></a>
-<a href='https://gitee.com/Z568_568/ZY-Admin/members'><img src='https://gitee.com/Z568_568/ZY-Admin/badge/fork.svg?theme=dark' alt='fork'></img></a>
+
+[comment]: <> (<a href='https://gitee.com/Z568_568/ZY-Admin/stargazers'><img src='https://gitee.com/Z568_568/ZY-Admin/badge/star.svg?theme=dark' alt='star'></img></a>)
+
+[comment]: <> (<a href='https://gitee.com/Z568_568/ZY-Admin/members'><img src='https://gitee.com/Z568_568/ZY-Admin/badge/fork.svg?theme=dark' alt='fork'></img></a>)
 </p>
 </p>
 
-ZY·Admin是一个现代化的管理系统，提供了一系列功能丰富的组件和工具，帮助开发者快速搭建和开发管理后台应用。
+Vue3-Antd-Plus是一个现代化的管理系统，提供了一系列功能丰富的组件和工具，帮助开发者快速搭建和开发管理后台应用。
 
-**基于 Vue 3 + js + Pinia +Vite + Ant Design Vue 构建**  
+**基于 Vue 3 + JavaScript + Pinia +Vite + Ant Design Vue 构建 管理后台+web前台+Node后端代码一整套**  
 
  做这个项目主要原因：全网大都是 Vue3 + TypeScript 版本的,so so 决定做一个JavaScript版本的供大家使用
 
 ---
 
-> 💥 完整版还在开发中... 将会包含（管理后台+web前台+Node后端代码一整套）
 
 ## 截图
 <img  src="doc/img_9.png" width = "300" height = "150">
