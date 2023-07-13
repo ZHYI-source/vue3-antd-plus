@@ -1,37 +1,155 @@
-# Vue3-Antd-Plus
+# ZY·Admin【简洁版】
 
-#### 介绍
-👍 提供了一个基于最新的技术栈（Vue 3、Vite、Ant Design Vue 3、JavaScript、Pinia、Hooks和vue-router）的完整开发模板，旨在帮助初学者更快地入门并加入团队开发。该模板包含了一系列功能模块，如大屏展示、自定义主题、角色用户、菜单授权、数据权限和系统参数等，并且所有模块都经过了完整的组件封装
+<p align="center">
+  <a href="https://gitee.com/Z568_568/mango-blog-system.git">
+    <img src="doc/logo.png" alt="Logo" width="150" height="210">
+  </a>
 
-#### 软件架构
-软件架构说明
+<h3 align="center">" 🔥 ZY·Admin "</h3>
+  <p align="center">
+    基于 Vue3 + js 现代化的管理系统【简洁版】
+    <br />
+    <a href="https://gitee.com/Z568_568/ZY-Admin.git" target="_blank"><strong>探索本项目的源码 »</strong></a>
+    <br />
+<a href='https://gitee.com/Z568_568/ZY-Admin/stargazers'><img src='https://gitee.com/Z568_568/ZY-Admin/badge/star.svg?theme=dark' alt='star'></img></a>
+<a href='https://gitee.com/Z568_568/ZY-Admin/members'><img src='https://gitee.com/Z568_568/ZY-Admin/badge/fork.svg?theme=dark' alt='fork'></img></a>
+</p>
+</p>
+
+ZY·Admin是一个现代化的管理系统，提供了一系列功能丰富的组件和工具，帮助开发者快速搭建和开发管理后台应用。
+
+**基于 Vue 3 + js + Pinia +Vite + Ant Design Vue 构建**  
+
+ 做这个项目主要原因：全网大都是 Vue3 + TypeScript 版本的,so so 决定做一个JavaScript版本的供大家使用
+
+---
+
+> 💥 完整版还在开发中... 将会包含（管理后台+web前台+Node后端代码一整套）
+
+## 截图
+<img  src="doc/img.png" width = "300" height = "150">
+<img src="doc/img_1.png" width = "300" height = "150">
+<img src="doc/img_2.png" width = "300" height = "150">
+<img src="doc/img_3.png" width = "300" height = "150">
+<img src="doc/img_4.png" width = "300" height = "150">
+<img src="doc/img_5.png" width = "300" height = "150">
+ 
+
+## 功能特性
+
+- 使用 Vue 3 和 Vite 构建，具备高效的开发体验和优秀的性能表现
+- 集成了 Ant Design Vue 组件库，提供美观的 UI 界面和丰富的组件选项 和主题切换
+- 使用 Vue Router 实现路由管理，支持多层级路由和动态路由
+- 使用 Axios 处理 HTTP 请求，与后端进行数据交互
+- 集成 ECharts 图表库，展示数据统计和可视化效果
+- 使用 Pinia 进行状态管理，提供了一种响应式的数据流方案
+- 集成 Tinymce 富文本编辑器和 Vditor Markdown 编辑器，满足不同的编辑需求
+- 使用 hotkeys-js 提供快捷键支持，增强用户操作体验
+- 使用 Lodash 提供常用工具函数，简化开发流程
+- 集成了测试工具集 @vue/test-utils 和 vitest，方便进行单元测试
+- 更多....
+
+#### 我的其他开源项目
+>[😜博客全栈系统 vue2 + node.js](https://gitee.com/Z568_568/all-blog-sys.git)
+ 
+>[个人文件管理+图床管理服务系统](https://gitee.com/Z568_568/zy.files.sys.git)
+ 
+>[node+mysql后端api基础服务模板](https://gitee.com/Z568_568/zy-express-sequelize-mysql)
+
+>[node+mongodb开发REST API 的轻量级样板](https://gitee.com/Z568_568/node.mongodb)
 
 
-#### 安装教程
+## 快速开始
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+1. 克隆本仓库到本地
 
-#### 使用说明
+   ```
+   git clone https://gitee.com/Z568_568/ZY-Admin.git
+   ```
 
-1.  xxxx
-2.  xxxx
-3.  xxxx
+2. 安装依赖
 
-#### 参与贡献
+   ```
+   npm install
+   ```
 
-1.  Fork 本仓库
-2.  新建 Feat_xxx 分支
-3.  提交代码
-4.  新建 Pull Request
+3. 本地启动
+
+   ```
+   npm run dev
+   ```
+
+4. 打包生产环境
+
+   ```
+   npm run build
+   ```
+## 添加路由页面
+
+```
+/**
+ * 在主框架内显示
+ * 路由配置说明
+ * {
+      path: '/dir-demo-info',    // 页面地址（唯一）
+      name: 'dir-demo-info',     // 页面名称（唯一）
+      hidden: false,              // 隐藏（不展示在侧边栏菜单）
+      meta: {
+          title: '用户管理',       // 页面标题
+          icon: 'yonghuguanli',  // 页面图标
+          cache: true,          // 页面是否进行缓存 默认true
+          link: false,           // 页面是否是外链 默认false
+          frameSrc: false,       // 页面是否是内嵌 默认false
+          requiresAuth: true,   // 页面是否是需要登录 默认true
+          perms: [               // 页面的操作的权限列表
+              'sys:user:list',   // 查询
+              'sys:user:create', // 增加
+              'sys:user:update', // 更新
+              'sys:user:delete', // 删除
+          ],
+      },
+      component: () => import('@/views/sys/user/dir-user-info.vue'),
+   }
+ *
+ */
+```
+
+## 配置权限
+
+```js
+    // 需要根据用户单独从后端那权限表
+        let perms = {
+            admin: ['*'],
+            test: [
+                'sys:user:list',
+                'sys:user:create',
+                'sys:user:update',
+                'sys:user:delete',
+            ],
+        }
+
+```
+....
 
 
-#### 特技
+## 贡献
 
-1.  使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2.  Gitee 官方博客 [blog.gitee.com](https://blog.gitee.com)
-3.  你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解 Gitee 上的优秀开源项目
-4.  [GVP](https://gitee.com/gvp) 全称是 Gitee 最有价值开源项目，是综合评定出的优秀开源项目
-5.  Gitee 官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6.  Gitee 封面人物是一档用来展示 Gitee 会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+欢迎对ZY·Admin项目的改进和完善，如果您发现任何错误或有任何建议，请随时提交问题和拉取请求。
+
+## 版权
+
+ZY·Admin是一个开源项目，根据MIT许可证发布。有关更多信息，请参阅LICENSE文件。
+
+## 联系方式
+
+如果你有任何问题或建议，请通过以下方式联系我：
+
+- 邮箱：1840354092@qq.com
+- 微信：<img src="doc/img_6.png" width = "150" >
+
+####  赞赏作者
+
+ <img src="doc/img_7.png" width = "150" height = "150" alt="图片名称" align=center />
+ <img src="doc/img_8.png" width = "150" height = "150" alt="图片名称" align=center />
+
+

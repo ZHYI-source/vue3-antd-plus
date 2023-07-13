@@ -1,7 +1,8 @@
-# Vue3-Antd-Plus
+# ZY-Admin-Vue3
 
 #### Description
-👍 提供了一个基于最新的技术栈（Vue 3、Vite、Ant Design Vue 3、JavaScript、Pinia、Hooks和vue-router）的完整开发模板，旨在帮助初学者更快地入门并加入团队开发。该模板包含了一系列功能模块，如大屏展示、自定义主题、角色用户、菜单授权、数据权限和系统参数等，并且所有模块都经过了完整的组件封装
+🔥ZY·Admin基于 Vue 3 + js + Pinia +Vite + Ant Design Vue 构建,是一个现代化的管理系统，提供了一系列功能丰富的组件和工具，帮助开发者快速搭建和开发管理后台应用。
+
 
 #### Software Architecture
 Software architecture description

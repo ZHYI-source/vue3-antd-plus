@@ -1,0 +1,2850 @@
+/*
+ Navicat Premium Data Transfer
+
+ Source Server         : MD_localhost
+ Source Server Type    : MongoDB
+ Source Server Version : 60005
+ Source Host           : localhost:27017
+ Source Schema         : my_db
+
+ Target Server Type    : MongoDB
+ Target Server Version : 60005
+ File Encoding         : 65001
+
+ Date: 09/07/2023 22:35:16
+*/
+
+
+// ----------------------------
+// Collection structure for codes
+// ----------------------------
+db.getCollection("codes").drop();
+db.createCollection("codes");
+
+// ----------------------------
+// Documents of codes
+// ----------------------------
+db.getCollection("codes").insert([ {
+    _id: ObjectId("64a7cebb6928a2700ed86c8d"),
+    name: "users_opt_logs.js",
+    type: "后端路由文件-JS",
+    url: "http://localhost:3089/v1/dev/codes/download?name=users_opt_logs.js",
+    remark: "按钮权限：\n                    【 sys:users_opt_logs:list  】  \n                    【 sys:users_opt_logs:create  】   \n                    【 sys:users_opt_logs:update  】   \n                    【 sys:users_opt_logs:delete   】  \n                    ",
+    createdAt: ISODate("2023-07-07T08:37:15.844Z"),
+    updatedAt: ISODate("2023-07-07T08:37:15.844Z")
+} ]);
+db.getCollection("codes").insert([ {
+    _id: ObjectId("64a7cebb6928a2700ed86c8e"),
+    name: "Users_opt_logsController.js",
+    type: "后端控制器文件-JS",
+    url: "http://localhost:3089/v1/dev/codes/download?name=Users_opt_logsController.js",
+    remark: "按钮权限：\n                    【 sys:users_opt_logs:list  】  \n                    【 sys:users_opt_logs:create  】   \n                    【 sys:users_opt_logs:update  】   \n                    【 sys:users_opt_logs:delete   】  \n                    ",
+    createdAt: ISODate("2023-07-07T08:37:15.844Z"),
+    updatedAt: ISODate("2023-07-07T08:37:15.844Z")
+} ]);
+db.getCollection("codes").insert([ {
+    _id: ObjectId("64a7cebb6928a2700ed86c8f"),
+    name: "dir-users_opt_logs-info.vue",
+    type: "前端页面-VUE",
+    url: "http://localhost:3089/v1/dev/codes/download?name=dir-users_opt_logs-info.vue",
+    remark: "按钮权限：\n                    【 sys:users_opt_logs:list  】  \n                    【 sys:users_opt_logs:create  】   \n                    【 sys:users_opt_logs:update  】   \n                    【 sys:users_opt_logs:delete   】  \n                    ",
+    createdAt: ISODate("2023-07-07T08:37:15.844Z"),
+    updatedAt: ISODate("2023-07-07T08:37:15.844Z")
+} ]);
+db.getCollection("codes").insert([ {
+    _id: ObjectId("64a7cebb6928a2700ed86c90"),
+    name: "get-users_opt_logs-info.vue",
+    type: "前端页面-VUE",
+    url: "http://localhost:3089/v1/dev/codes/download?name=get-users_opt_logs-info.vue",
+    remark: "按钮权限：\n                    【 sys:users_opt_logs:list  】  \n                    【 sys:users_opt_logs:create  】   \n                    【 sys:users_opt_logs:update  】   \n                    【 sys:users_opt_logs:delete   】  \n                    ",
+    createdAt: ISODate("2023-07-07T08:37:15.844Z"),
+    updatedAt: ISODate("2023-07-07T08:37:15.844Z")
+} ]);
+db.getCollection("codes").insert([ {
+    _id: ObjectId("64a7cebb6928a2700ed86c91"),
+    name: "view-users_opt_logs-info.vue",
+    type: "前端页面-VUE",
+    url: "http://localhost:3089/v1/dev/codes/download?name=view-users_opt_logs-info.vue",
+    remark: "按钮权限：\n                    【 sys:users_opt_logs:list  】  \n                    【 sys:users_opt_logs:create  】   \n                    【 sys:users_opt_logs:update  】   \n                    【 sys:users_opt_logs:delete   】  \n                    ",
+    createdAt: ISODate("2023-07-07T08:37:15.844Z"),
+    updatedAt: ISODate("2023-07-07T08:37:15.844Z")
+} ]);
+db.getCollection("codes").insert([ {
+    _id: ObjectId("64a7cebb6928a2700ed86c92"),
+    name: "api.users_opt_logs.js",
+    type: "前端请求接口-JS",
+    url: "http://localhost:3089/v1/dev/codes/download?name=api.users_opt_logs.js",
+    remark: "按钮权限：\n                    【 sys:users_opt_logs:list  】  \n                    【 sys:users_opt_logs:create  】   \n                    【 sys:users_opt_logs:update  】   \n                    【 sys:users_opt_logs:delete   】  \n                    ",
+    createdAt: ISODate("2023-07-07T08:37:15.845Z"),
+    updatedAt: ISODate("2023-07-07T08:37:15.845Z")
+} ]);
+
+// ----------------------------
+// Collection structure for permissions
+// ----------------------------
+db.getCollection("permissions").drop();
+db.createCollection("permissions");
+
+// ----------------------------
+// Documents of permissions
+// ----------------------------
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a6767b2f517ae48b51de4a"),
+    name: "首页",
+    key: "index",
+    auth: false,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-06T08:08:27.735Z"),
+    updatedAt: ISODate("2023-07-09T13:49:30.787Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a676872f517ae48b51de50"),
+    name: "系统管理",
+    key: "sys",
+    auth: false,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-06T08:08:39.65Z"),
+    updatedAt: ISODate("2023-07-06T13:26:57.493Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a676942f517ae48b51de56"),
+    name: "用户管理",
+    key: "sys:users",
+    "parent_key": "sys",
+    auth: false,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-06T08:08:52.375Z"),
+    updatedAt: ISODate("2023-07-07T02:37:51.339Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a676a62f517ae48b51de5c"),
+    name: "查询",
+    key: "sys:users:list",
+    "parent_key": "sys:users",
+    auth: true,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-06T08:09:10.271Z"),
+    updatedAt: ISODate("2023-07-09T13:53:59.963Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a676b72f517ae48b51de62"),
+    name: "增加",
+    key: "sys:users:create",
+    "parent_key": "sys:users",
+    auth: true,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-06T08:09:27.173Z"),
+    updatedAt: ISODate("2023-07-06T14:41:34.107Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a676ca2f517ae48b51de68"),
+    name: "删除",
+    key: "sys:users:delete",
+    "parent_key": "sys:users",
+    auth: true,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-06T08:09:46.18Z"),
+    updatedAt: ISODate("2023-07-06T14:41:40.693Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a676d82f517ae48b51de6e"),
+    name: "重置密码",
+    key: "sys:users:reset",
+    "parent_key": "sys:users",
+    auth: true,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-06T08:10:00.965Z"),
+    updatedAt: ISODate("2023-07-06T14:41:54.406Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a6bce2210858fb6ec32f55"),
+    name: "开发工具",
+    key: "dev",
+    auth: false,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-06T13:08:50.188Z"),
+    updatedAt: ISODate("2023-07-06T13:27:34.278Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a6ec18bbab6245325057dc"),
+    name: "图标列表",
+    key: "dev:icon",
+    "parent_key": "dev",
+    auth: false,
+    sortOrder: NumberInt("1"),
+    status: true,
+    createdAt: ISODate("2023-07-06T16:30:16.901Z"),
+    updatedAt: ISODate("2023-07-07T03:22:12.747Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a6eca8bbab6245325057ee"),
+    name: "查询",
+    key: "sys:permissions:list",
+    "parent_key": "sys:permissions",
+    auth: true,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-06T16:32:40.326Z"),
+    updatedAt: ISODate("2023-07-06T16:32:40.326Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a6ecc0bbab6245325057f4"),
+    name: "增加",
+    key: "sys:permissions:create",
+    "parent_key": "sys:permissions",
+    auth: true,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-06T16:33:04.782Z"),
+    updatedAt: ISODate("2023-07-06T16:33:04.782Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a6ecdebbab6245325057fa"),
+    name: "删除",
+    key: "sys:permissions:delete",
+    "parent_key": "sys:permissions",
+    auth: true,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-06T16:33:34.613Z"),
+    updatedAt: ISODate("2023-07-06T16:33:34.613Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a6ecffbbab624532505800"),
+    name: "修改",
+    key: "sys:permissions:update",
+    "parent_key": "sys:permissions",
+    auth: true,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-06T16:34:07.219Z"),
+    updatedAt: ISODate("2023-07-06T16:34:07.219Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a6f171d2fac9dd58d3025c"),
+    name: "角色管理",
+    key: "sys:roles",
+    "parent_key": "sys",
+    auth: false,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-06T16:53:05.026Z"),
+    updatedAt: ISODate("2023-07-06T16:53:05.026Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a6f171d2fac9dd58d3025d"),
+    name: "查询",
+    key: "sys:roles:list",
+    "parent_key": "sys:roles",
+    auth: true,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-06T16:53:05.026Z"),
+    updatedAt: ISODate("2023-07-06T16:53:05.026Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a6f171d2fac9dd58d3025e"),
+    name: "增加",
+    key: "sys:roles:create",
+    "parent_key": "sys:roles",
+    auth: true,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-06T16:53:05.026Z"),
+    updatedAt: ISODate("2023-07-06T16:53:05.026Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a6f171d2fac9dd58d3025f"),
+    name: "删除",
+    key: "sys:roles:delete",
+    "parent_key": "sys:roles",
+    auth: true,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-06T16:53:05.026Z"),
+    updatedAt: ISODate("2023-07-06T16:53:05.026Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a6f171d2fac9dd58d30260"),
+    name: "更新",
+    key: "sys:roles:update",
+    "parent_key": "sys:roles",
+    auth: true,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-06T16:53:05.026Z"),
+    updatedAt: ISODate("2023-07-06T16:53:05.026Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a7799604246540f7286663"),
+    name: "权限管理",
+    key: "sys:permissions",
+    "parent_key": "sys",
+    auth: false,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-07T02:33:58.142Z"),
+    updatedAt: ISODate("2023-07-07T02:33:58.142Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a77a0104246540f7286681"),
+    name: "停用",
+    key: "sys:permissions:stop",
+    "parent_key": "sys:permissions",
+    auth: true,
+    sortOrder: null,
+    status: true,
+    createdAt: ISODate("2023-07-07T02:35:45.3Z"),
+    updatedAt: ISODate("2023-07-07T02:35:45.3Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a784d104a94eaa96595abb"),
+    name: "代码生成",
+    key: "dev:codes",
+    "parent_key": "dev",
+    auth: false,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-07T03:21:53.616Z"),
+    updatedAt: ISODate("2023-07-07T03:21:53.616Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a784d104a94eaa96595abc"),
+    name: "查询",
+    key: "dev:codes:list",
+    "parent_key": "dev:codes",
+    auth: true,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-07T03:21:53.616Z"),
+    updatedAt: ISODate("2023-07-07T03:21:53.616Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a784d104a94eaa96595abd"),
+    name: "创建",
+    key: "dev:codes:singleCurdFrontAndBack",
+    "parent_key": "dev:codes",
+    auth: true,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-07T03:21:53.616Z"),
+    updatedAt: ISODate("2023-07-07T05:28:34.029Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a784d104a94eaa96595abe"),
+    name: "删除",
+    key: "dev:codes:delete",
+    "parent_key": "dev:codes",
+    auth: true,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-07T03:21:53.617Z"),
+    updatedAt: ISODate("2023-07-07T03:21:53.617Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a784d104a94eaa96595abf"),
+    name: "批量删除",
+    key: "dev:codes:deleteAll",
+    "parent_key": "dev:codes",
+    auth: true,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-07T03:21:53.617Z"),
+    updatedAt: ISODate("2023-07-07T05:28:50.417Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a7a633f97cdac3cb1bbbcf"),
+    name: "页面示例",
+    key: "pages",
+    auth: false,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-07T05:44:19.405Z"),
+    updatedAt: ISODate("2023-07-07T05:44:19.405Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a7a67af97cdac3cb1bbbee"),
+    name: "组件示例",
+    key: "components",
+    auth: false,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-07T05:45:30.168Z"),
+    updatedAt: ISODate("2023-07-07T05:45:30.168Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a7a695f97cdac3cb1bbbf4"),
+    name: "图表地图",
+    key: "components:echart",
+    "parent_key": "components",
+    auth: false,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-07T05:45:57.351Z"),
+    updatedAt: ISODate("2023-07-07T05:45:57.351Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a7a695f97cdac3cb1bbbf5"),
+    name: "贵州地图",
+    key: "components:echart:guizhouMap",
+    "parent_key": "components:echart",
+    auth: false,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-07T05:45:57.351Z"),
+    updatedAt: ISODate("2023-07-07T05:46:19.623Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a7a695f97cdac3cb1bbbf6"),
+    name: "中国地图",
+    key: "components:echart:chinaMap",
+    "parent_key": "components:echart",
+    auth: false,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-07T05:45:57.351Z"),
+    updatedAt: ISODate("2023-07-07T05:46:33.902Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a7a695f97cdac3cb1bbbf7"),
+    name: "世界地图",
+    key: "components:echart:worldMap",
+    "parent_key": "components:echart",
+    auth: false,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-07T05:45:57.351Z"),
+    updatedAt: ISODate("2023-07-07T05:46:44.697Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a7a695f97cdac3cb1bbbf8"),
+    name: "折线图",
+    key: "components:echart:line",
+    "parent_key": "components:echart",
+    auth: false,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-07T05:45:57.352Z"),
+    updatedAt: ISODate("2023-07-07T05:46:56.584Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a7a6e1f97cdac3cb1bbc16"),
+    name: "饼图",
+    key: "components:echart:pie",
+    "parent_key": "components:echart",
+    auth: false,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-07T05:47:13.846Z"),
+    updatedAt: ISODate("2023-07-07T05:47:20.216Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a7a9dda971facd04696235"),
+    name: "综合页面",
+    key: "pages:all",
+    "parent_key": "pages",
+    auth: false,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-07T05:59:57.159Z"),
+    updatedAt: ISODate("2023-07-07T05:59:57.159Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a7ab9da971facd04696299"),
+    name: "富文本",
+    key: "components:editor",
+    "parent_key": "components",
+    auth: false,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-07T06:07:25.737Z"),
+    updatedAt: ISODate("2023-07-07T06:07:25.737Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a7abb7a971facd0469629f"),
+    name: "Tinymce",
+    key: "components:editor:Tinymce",
+    "parent_key": "components:editor",
+    auth: false,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-07T06:07:51.383Z"),
+    updatedAt: ISODate("2023-07-07T06:08:04.393Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a7abe1a971facd046962ab"),
+    name: "Vditor",
+    key: "components:editor:Vditor",
+    "parent_key": "components:editor",
+    auth: false,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-07T06:08:33.975Z"),
+    updatedAt: ISODate("2023-07-07T06:08:33.975Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a7abefa971facd046962b1"),
+    name: "VMdEditor",
+    key: "components:editor:VMdEditor",
+    "parent_key": "components:editor",
+    auth: false,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-07T06:08:47.735Z"),
+    updatedAt: ISODate("2023-07-07T06:08:47.735Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a7cbe6b85fe16110610cf5"),
+    name: "操作日志",
+    key: "sys:users_opt_logs",
+    "parent_key": "sys",
+    auth: false,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-07T08:25:10.645Z"),
+    updatedAt: ISODate("2023-07-07T08:25:10.645Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a7cbe6b85fe16110610cf6"),
+    name: "查询",
+    key: "sys:users_opt_logs:list",
+    "parent_key": "sys:users_opt_logs",
+    auth: true,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-07T08:25:10.645Z"),
+    updatedAt: ISODate("2023-07-07T08:25:10.645Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a7cbe6b85fe16110610cf7"),
+    name: "增加",
+    key: "sys:users_opt_logs:create",
+    "parent_key": "sys:users_opt_logs",
+    auth: true,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-07T08:25:10.645Z"),
+    updatedAt: ISODate("2023-07-07T08:25:10.645Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a7cbe6b85fe16110610cf8"),
+    name: "删除",
+    key: "sys:users_opt_logs:delete",
+    "parent_key": "sys:users_opt_logs",
+    auth: true,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-07T08:25:10.645Z"),
+    updatedAt: ISODate("2023-07-07T08:25:10.645Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a7cbe6b85fe16110610cf9"),
+    name: "更新",
+    key: "sys:users_opt_logs:update",
+    "parent_key": "sys:users_opt_logs",
+    auth: true,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-07T08:25:10.645Z"),
+    updatedAt: ISODate("2023-07-07T08:25:10.645Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64a7d30aacc04191a405fb61"),
+    name: "批量删除",
+    key: "sys:users_opt_logs:deleteAll",
+    "parent_key": "sys:users_opt_logs",
+    auth: true,
+    sortOrder: NumberInt("0"),
+    status: true,
+    createdAt: ISODate("2023-07-07T08:55:38.696Z"),
+    updatedAt: ISODate("2023-07-09T13:57:08.966Z"),
+    disabled: false
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64aaba720be0f2e7919b38d5"),
+    name: "测试",
+    key: "测试",
+    auth: false,
+    sortOrder: NumberInt("0"),
+    status: true,
+    disabled: false,
+    createdAt: ISODate("2023-07-09T13:47:30.385Z"),
+    updatedAt: ISODate("2023-07-09T13:47:30.385Z")
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64aabc5804fd30a2ac31c2a9"),
+    name: "导出",
+    key: "sys:users_opt_logs:export",
+    "parent_key": "sys:users_opt_logs",
+    auth: true,
+    sortOrder: NumberInt("0"),
+    status: true,
+    disabled: false,
+    createdAt: ISODate("2023-07-09T13:55:36.412Z"),
+    updatedAt: ISODate("2023-07-09T13:55:36.412Z")
+} ]);
+db.getCollection("permissions").insert([ {
+    _id: ObjectId("64aabc6b04fd30a2ac31c2b5"),
+    name: "导入",
+    key: "sys:users_opt_logs:import",
+    "parent_key": "sys:users_opt_logs",
+    auth: true,
+    sortOrder: NumberInt("0"),
+    status: true,
+    disabled: false,
+    createdAt: ISODate("2023-07-09T13:55:55.856Z"),
+    updatedAt: ISODate("2023-07-09T13:55:55.856Z")
+} ]);
+
+// ----------------------------
+// Collection structure for roles
+// ----------------------------
+db.getCollection("roles").drop();
+db.createCollection("roles");
+db.getCollection("roles").createIndex({
+    roleName: NumberInt("1")
+}, {
+    name: "roleName_1",
+    background: true,
+    unique: true
+});
+
+// ----------------------------
+// Documents of roles
+// ----------------------------
+db.getCollection("roles").insert([ {
+    _id: ObjectId("64a423816f4197cfc70375e3"),
+    roleName: "超级管理员",
+    roleAuth: "SUPER-ADMIN",
+    perms: [
+        "*"
+    ],
+    remark: "拥有所有权限",
+    status: true,
+    createdAt: ISODate("2023-07-04T13:49:53.993Z"),
+    updatedAt: ISODate("2023-07-04T13:50:42.566Z")
+} ]);
+db.getCollection("roles").insert([ {
+    _id: ObjectId("64a426a56f4197cfc70375f6"),
+    roleName: "普通管理员",
+    roleAuth: "NORMALL-ADMIN",
+    perms: [
+        "index",
+        "sys:users:list",
+        "sys:roles:list",
+        "sys:permissions:list"
+    ],
+    remark: "拥有部分权限",
+    status: true,
+    createdAt: ISODate("2023-07-04T14:03:17.858Z"),
+    updatedAt: ISODate("2023-07-06T16:53:42.888Z")
+} ]);
+db.getCollection("roles").insert([ {
+    _id: ObjectId("64a6e9c04ef9906878daeced"),
+    roleName: "开发人员",
+    roleAuth: "DEV-ADMIN",
+    perms: [
+        "index",
+        "dev",
+        "dev:codes",
+        "dev:codes:delete",
+        "dev:icon",
+        "dev:codes:list",
+        "dev:codes:update",
+        "dev:codes:create"
+    ],
+    remark: "开发人员",
+    status: true,
+    createdAt: ISODate("2023-07-06T16:20:16.785Z"),
+    updatedAt: ISODate("2023-07-06T16:36:00.742Z")
+} ]);
+db.getCollection("roles").insert([ {
+    _id: ObjectId("64a7aa20a971facd04696242"),
+    roleName: "访客",
+    roleAuth: "VISITOR-ADMIN",
+    perms: [
+        "index",
+        "components:echart:chinaMap",
+        "components:echart:worldMap",
+        "components:echart:line",
+        "components:echart:pie",
+        "pages",
+        "pages:all",
+        "dev:icon",
+        "dev:codes:list",
+        "components:editor",
+        "components:editor:Tinymce",
+        "components:editor:Vditor",
+        "components:editor:VMdEditor",
+        "components",
+        "components:echart",
+        "components:echart:guizhouMap",
+        "sys:permissions:list"
+    ],
+    remark: "一般访客，更多的是有查看权限",
+    status: true,
+    createdAt: ISODate("2023-07-07T06:01:04.121Z"),
+    updatedAt: ISODate("2023-07-07T06:09:50.987Z")
+} ]);
+
+// ----------------------------
+// Collection structure for users
+// ----------------------------
+db.getCollection("users").drop();
+db.createCollection("users");
+db.getCollection("users").createIndex({
+    email: NumberInt("1")
+}, {
+    name: "email_1",
+    background: true
+});
+
+// ----------------------------
+// Documents of users
+// ----------------------------
+db.getCollection("users").insert([ {
+    _id: ObjectId("64a44676a7d3b5975bacd199"),
+    avatar: "data:image/jpeg;base64,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",
+    username: "test",
+    nickname: "书中枫叶",
+    password: "$2a$10$LBlzjdfxAqVLBMsoDsmVgeHfaTdAtSBzZet33.thbp6E0pWQYbMPq",
+    email: "1840354094@qq.com",
+    roleId: ObjectId("64a426a56f4197cfc70375f6"),
+    status: true,
+    createdAt: ISODate("2023-07-04T16:19:02.517Z"),
+    updatedAt: ISODate("2023-07-09T14:26:26.548Z")
+} ]);
+db.getCollection("users").insert([ {
+    _id: ObjectId("64a7aab3a971facd0469625d"),
+    avatar: "http://localhost:3089/v1/common/files/preview/img/1688908964448.jpg",
+    username: "visitor",
+    nickname: "亡命之徒",
+    password: "$2a$10$d0MQyKMyvNcX8whJsF7O0OLqulGKo3GE0hS/WqoGFKpU.dmFRIHFO",
+    roleId: ObjectId("64a7aa20a971facd04696242"),
+    status: true,
+    createdAt: ISODate("2023-07-07T06:03:31.69Z"),
+    updatedAt: ISODate("2023-07-09T13:22:45.763Z")
+} ]);
+db.getCollection("users").insert([ {
+    _id: ObjectId("64aabf3d28f413f08d51cc00"),
+    avatar: "http://localhost:3089/v1/common/files/preview/img/1688911653555.png",
+    username: "admin",
+    nickname: "ZY·Admin",
+    password: "$2a$10$hdgL5ydnB8oLLcrgwjXdouAaZV/by32gWPOBiMl3wwFEzSVmdTvtG",
+    roleId: ObjectId("64a423816f4197cfc70375e3"),
+    status: true,
+    createdAt: ISODate("2023-07-09T14:07:57.766Z"),
+    updatedAt: ISODate("2023-07-09T14:07:57.766Z")
+} ]);
+db.getCollection("users").insert([ {
+    _id: ObjectId("64aac04828f413f08d51cc4e"),
+    avatar: "https://i.pinimg.com/564x/75/0e/43/750e43ca9a59803ebb05754e740f3946.jpg",
+    username: "visitor1",
+    nickname: "注册的用户",
+    password: "$2a$10$IZpEZ1zVQJCP6D9QnWh.Zej4f34U8uDqLPSZJ4/XQCk/sxi4ctRyS",
+    email: "1840354092@qq.com",
+    status: true,
+    createdAt: ISODate("2023-07-09T14:12:24.898Z"),
+    updatedAt: ISODate("2023-07-09T14:12:24.898Z")
+} ]);
+db.getCollection("users").insert([ {
+    _id: ObjectId("64aac2aee9b9fd61bcfd9fbf"),
+    avatar: "https://i.pinimg.com/564x/75/0e/43/750e43ca9a59803ebb05754e740f3946.jpg",
+    username: "forst",
+    nickname: "我是来注册的呢",
+    password: "$2a$10$nDP0ih7dxNDQreTIRHOb4.NF3Jy.OLmCWZNCaxyN98TTae.m/UHe6",
+    email: "1840354092@qq.com",
+    roleId: ObjectId("64a7aa20a971facd04696242"),
+    status: true,
+    createdAt: ISODate("2023-07-09T14:22:38.875Z"),
+    updatedAt: ISODate("2023-07-09T14:22:38.875Z")
+} ]);
+
+// ----------------------------
+// Collection structure for users_opt_logs
+// ----------------------------
+db.getCollection("users_opt_logs").drop();
+db.createCollection("users_opt_logs");
+
+// ----------------------------
+// Documents of users_opt_logs
+// ----------------------------
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7caccb85fe16110610cd8"),
+    operator: "admin",
+    operatorId: "-",
+    module: "登录",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/login",
+    createdAt: ISODate("2023-07-07T08:20:28.086Z"),
+    updatedAt: ISODate("2023-07-07T08:20:28.086Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7cbe6b85fe16110610cf3"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/新增",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/create",
+    createdAt: ISODate("2023-07-07T08:25:10.64Z"),
+    updatedAt: ISODate("2023-07-07T08:25:10.64Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7cbf7b85fe16110610cff"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/停用权限",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/stop",
+    createdAt: ISODate("2023-07-07T08:25:27.408Z"),
+    updatedAt: ISODate("2023-07-07T08:25:27.408Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7cbf8b85fe16110610d07"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/停用权限",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/stop",
+    createdAt: ISODate("2023-07-07T08:25:28.5Z"),
+    updatedAt: ISODate("2023-07-07T08:25:28.5Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7cc36f39efed2f1e3b17c"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-07T08:26:30.258Z"),
+    updatedAt: ISODate("2023-07-07T08:26:30.258Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7cc6507ea89c446b9a21a"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-07T08:27:17.938Z"),
+    updatedAt: ISODate("2023-07-07T08:27:17.938Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7cc6607ea89c446b9a21f"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-07T08:27:18.88Z"),
+    updatedAt: ISODate("2023-07-07T08:27:18.88Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7cc6707ea89c446b9a224"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-07T08:27:19.795Z"),
+    updatedAt: ISODate("2023-07-07T08:27:19.795Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7cebb6928a2700ed86c8b"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "开发工具/代码生成/创建",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/dev/codes/singleCurdFrontAndBack",
+    createdAt: ISODate("2023-07-07T08:37:15.82Z"),
+    updatedAt: ISODate("2023-07-07T08:39:28.095Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7d25f898aaba42f5a3f11"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/操作日志/批量删除",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users_opt_logs/deleteAll",
+    createdAt: ISODate("2023-07-07T08:52:47.189Z"),
+    updatedAt: ISODate("2023-07-07T08:52:47.189Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7d2c3acc04191a405fb4c"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/操作日志/批量删除",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users_opt_logs/deleteAll",
+    createdAt: ISODate("2023-07-07T08:54:27.97Z"),
+    updatedAt: ISODate("2023-07-07T08:54:27.97Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7d2cfacc04191a405fb53"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/操作日志/批量删除",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users_opt_logs/deleteAll",
+    createdAt: ISODate("2023-07-07T08:54:39.463Z"),
+    updatedAt: ISODate("2023-07-07T08:54:39.463Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7d2f7acc04191a405fb5a"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-07T08:55:19.003Z"),
+    updatedAt: ISODate("2023-07-07T08:55:19.003Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7d30aacc04191a405fb5f"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/新增",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/create",
+    createdAt: ISODate("2023-07-07T08:55:38.69Z"),
+    updatedAt: ISODate("2023-07-07T08:55:38.69Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7d30aacc04191a405fb64"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-07T08:55:38.856Z"),
+    updatedAt: ISODate("2023-07-07T08:55:38.856Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7d802331fd5e8b45e2084"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/操作日志/导出",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users_opt_logs/export",
+    createdAt: ISODate("2023-07-07T09:16:50.797Z"),
+    updatedAt: ISODate("2023-07-07T09:16:50.797Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7d821d02e015b50a570ec"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/操作日志/导出",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users_opt_logs/export",
+    createdAt: ISODate("2023-07-07T09:17:21.376Z"),
+    updatedAt: ISODate("2023-07-07T09:17:21.376Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7d92fd02e015b50a57109"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/操作日志/导出",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users_opt_logs/export",
+    createdAt: ISODate("2023-07-07T09:21:51.324Z"),
+    updatedAt: ISODate("2023-07-07T09:21:51.324Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7d95ad02e015b50a5710e"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/操作日志/导出",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users_opt_logs/export",
+    createdAt: ISODate("2023-07-07T09:22:34.528Z"),
+    updatedAt: ISODate("2023-07-07T09:22:34.528Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7d9b0d02e015b50a5711f"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/操作日志/导出",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users_opt_logs/export",
+    createdAt: ISODate("2023-07-07T09:24:00.034Z"),
+    updatedAt: ISODate("2023-07-07T09:24:00.034Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7da06d02e015b50a57127"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/操作日志/导出",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users_opt_logs/export",
+    createdAt: ISODate("2023-07-07T09:25:26.344Z"),
+    updatedAt: ISODate("2023-07-07T09:25:26.344Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7da37d02e015b50a5712f"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/操作日志/导出",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users_opt_logs/export",
+    createdAt: ISODate("2023-07-07T09:26:15.463Z"),
+    updatedAt: ISODate("2023-07-07T09:26:15.463Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7da6ad02e015b50a5713d"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/操作日志/导出",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users_opt_logs/export",
+    createdAt: ISODate("2023-07-07T09:27:06.384Z"),
+    updatedAt: ISODate("2023-07-07T09:27:06.384Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7da87d02e015b50a57148"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/操作日志/导出",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users_opt_logs/export",
+    createdAt: ISODate("2023-07-07T09:27:35.967Z"),
+    updatedAt: ISODate("2023-07-07T09:27:35.967Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7dc74e708e9a3a70df5b2"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/操作日志/导出",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users_opt_logs/export",
+    createdAt: ISODate("2023-07-07T09:35:48.446Z"),
+    updatedAt: ISODate("2023-07-07T09:35:48.446Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7dceb3696314c303494bd"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/操作日志/导出",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users_opt_logs/export",
+    createdAt: ISODate("2023-07-07T09:37:47.792Z"),
+    updatedAt: ISODate("2023-07-07T09:37:47.792Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64a7dd26aeca101e2547d084"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/操作日志/导出",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users_opt_logs/export",
+    createdAt: ISODate("2023-07-07T09:38:46.115Z"),
+    updatedAt: ISODate("2023-07-07T09:38:46.115Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aab493dcf42b855b431495"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T13:22:27.048Z"),
+    updatedAt: ISODate("2023-07-09T13:22:27.048Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aab495dcf42b855b43149a"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T13:22:29.839Z"),
+    updatedAt: ISODate("2023-07-09T13:22:29.839Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aab497dcf42b855b43149f"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T13:22:31.61Z"),
+    updatedAt: ISODate("2023-07-09T13:22:31.61Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aab49cdcf42b855b4314a4"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/更新",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/update",
+    createdAt: ISODate("2023-07-09T13:22:36.667Z"),
+    updatedAt: ISODate("2023-07-09T13:22:36.667Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aab49ddcf42b855b4314a9"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T13:22:37.265Z"),
+    updatedAt: ISODate("2023-07-09T13:22:37.265Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aab49edcf42b855b4314ae"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T13:22:38.946Z"),
+    updatedAt: ISODate("2023-07-09T13:22:38.946Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aab4a5dcf42b855b4314b3"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/更新",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/update",
+    createdAt: ISODate("2023-07-09T13:22:45.758Z"),
+    updatedAt: ISODate("2023-07-09T13:22:45.758Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aab4a6dcf42b855b4314b8"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T13:22:46.39Z"),
+    updatedAt: ISODate("2023-07-09T13:22:46.39Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aab4abdcf42b855b4314bd"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T13:22:51.338Z"),
+    updatedAt: ISODate("2023-07-09T13:22:51.338Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aab4b5dcf42b855b4314c1"),
+    operator: "admin",
+    operatorId: "-",
+    module: "登录",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/login",
+    createdAt: ISODate("2023-07-09T13:23:01.342Z"),
+    updatedAt: ISODate("2023-07-09T13:23:01.342Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aab4bcdcf42b855b4314c7"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-09T13:23:08.45Z"),
+    updatedAt: ISODate("2023-07-09T13:23:08.45Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aab4bedcf42b855b4314cc"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T13:23:10.13Z"),
+    updatedAt: ISODate("2023-07-09T13:23:10.13Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aab535dcf42b855b4314d1"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-09T13:25:09.797Z"),
+    updatedAt: ISODate("2023-07-09T13:25:09.797Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aab727e17c7a57729ada98"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T13:33:27.389Z"),
+    updatedAt: ISODate("2023-07-09T13:33:27.389Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aab727e17c7a57729ada9d"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T13:33:27.931Z"),
+    updatedAt: ISODate("2023-07-09T13:33:27.931Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aab729e17c7a57729adaa2"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T13:33:29.586Z"),
+    updatedAt: ISODate("2023-07-09T13:33:29.586Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aab73ce4e29ca423e5dbbe"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T13:33:48.313Z"),
+    updatedAt: ISODate("2023-07-09T13:33:48.313Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aab73de4e29ca423e5dbc4"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T13:33:49.538Z"),
+    updatedAt: ISODate("2023-07-09T13:33:49.538Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aab7b2637321cb1a062426"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T13:35:46.38Z"),
+    updatedAt: ISODate("2023-07-09T13:35:46.38Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aab7b5637321cb1a06242c"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-09T13:35:49.025Z"),
+    updatedAt: ISODate("2023-07-09T13:35:49.025Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aab7b7637321cb1a062432"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-09T13:35:51.384Z"),
+    updatedAt: ISODate("2023-07-09T13:35:51.384Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aab9b4637321cb1a062438"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T13:44:20.179Z"),
+    updatedAt: ISODate("2023-07-09T13:44:20.179Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aaba4e0be0f2e7919b38cd"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-09T13:46:54.233Z"),
+    updatedAt: ISODate("2023-07-09T13:46:54.233Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aaba720be0f2e7919b38d3"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/新增",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/create",
+    createdAt: ISODate("2023-07-09T13:47:30.371Z"),
+    updatedAt: ISODate("2023-07-09T13:47:30.371Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aaba720be0f2e7919b38d9"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-09T13:47:30.637Z"),
+    updatedAt: ISODate("2023-07-09T13:47:30.637Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabaa30be0f2e7919b38df"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-09T13:48:19.692Z"),
+    updatedAt: ISODate("2023-07-09T13:48:19.692Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabad41ab742f55b1fa87c"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-09T13:49:08.476Z"),
+    updatedAt: ISODate("2023-07-09T13:49:08.476Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabad91ab742f55b1fa882"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/停用权限",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/stop",
+    createdAt: ISODate("2023-07-09T13:49:13.347Z"),
+    updatedAt: ISODate("2023-07-09T13:49:13.347Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabad91ab742f55b1fa888"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-09T13:49:13.617Z"),
+    updatedAt: ISODate("2023-07-09T13:49:13.617Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabadb1ab742f55b1fa88e"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T13:49:15.414Z"),
+    updatedAt: ISODate("2023-07-09T13:49:15.414Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabae81ab742f55b1fa896"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-09T13:49:28.64Z"),
+    updatedAt: ISODate("2023-07-09T13:49:28.64Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabaea1ab742f55b1fa89c"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/停用权限",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/stop",
+    createdAt: ISODate("2023-07-09T13:49:30.782Z"),
+    updatedAt: ISODate("2023-07-09T13:49:30.782Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabaeb1ab742f55b1fa8a2"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-09T13:49:31.057Z"),
+    updatedAt: ISODate("2023-07-09T13:49:31.057Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabaf11ab742f55b1fa8a8"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/停用权限",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/stop",
+    createdAt: ISODate("2023-07-09T13:49:37.634Z"),
+    updatedAt: ISODate("2023-07-09T13:49:37.634Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabaf21ab742f55b1fa8ae"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-09T13:49:38.141Z"),
+    updatedAt: ISODate("2023-07-09T13:49:38.141Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabaf51ab742f55b1fa8b4"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T13:49:41.568Z"),
+    updatedAt: ISODate("2023-07-09T13:49:41.568Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabb051ab742f55b1fa8ba"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-09T13:49:57.055Z"),
+    updatedAt: ISODate("2023-07-09T13:49:57.055Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabb101ab742f55b1fa8c0"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T13:50:08.743Z"),
+    updatedAt: ISODate("2023-07-09T13:50:08.743Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabb181ab742f55b1fa8c6"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T13:50:16.877Z"),
+    updatedAt: ISODate("2023-07-09T13:50:16.877Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabb1b1ab742f55b1fa8cc"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T13:50:19.372Z"),
+    updatedAt: ISODate("2023-07-09T13:50:19.372Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabb1e1ab742f55b1fa8d2"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/更新",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/update",
+    createdAt: ISODate("2023-07-09T13:50:22.319Z"),
+    updatedAt: ISODate("2023-07-09T13:50:22.319Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabb1e1ab742f55b1fa8d8"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T13:50:22.6Z"),
+    updatedAt: ISODate("2023-07-09T13:50:22.6Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabb2a1ab742f55b1fa8dc"),
+    operator: "test",
+    operatorId: "-",
+    module: "登录",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/login",
+    createdAt: ISODate("2023-07-09T13:50:34.269Z"),
+    updatedAt: ISODate("2023-07-09T13:50:34.269Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabb3d1ab742f55b1fa8e5"),
+    operator: "书中枫叶",
+    operatorId: "64a44676a7d3b5975bacd199",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T13:50:53.619Z"),
+    updatedAt: ISODate("2023-07-09T13:50:53.619Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabb431ab742f55b1fa8ed"),
+    operator: "书中枫叶",
+    operatorId: "64a44676a7d3b5975bacd199",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T13:50:59.121Z"),
+    updatedAt: ISODate("2023-07-09T13:50:59.121Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabbe904fd30a2ac31c28e"),
+    operator: "admin",
+    operatorId: "-",
+    module: "登录",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/login",
+    createdAt: ISODate("2023-07-09T13:53:45.835Z"),
+    updatedAt: ISODate("2023-07-09T13:53:45.835Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabbf004fd30a2ac31c295"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-09T13:53:52.466Z"),
+    updatedAt: ISODate("2023-07-09T13:53:52.466Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabbf704fd30a2ac31c29b"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/停用权限",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/stop",
+    createdAt: ISODate("2023-07-09T13:53:59.948Z"),
+    updatedAt: ISODate("2023-07-09T13:53:59.948Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabbf804fd30a2ac31c2a1"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-09T13:54:00.507Z"),
+    updatedAt: ISODate("2023-07-09T13:54:00.507Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabc5804fd30a2ac31c2a7"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/新增",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/create",
+    createdAt: ISODate("2023-07-09T13:55:36.41Z"),
+    updatedAt: ISODate("2023-07-09T13:55:36.41Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabc5804fd30a2ac31c2ad"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-09T13:55:36.744Z"),
+    updatedAt: ISODate("2023-07-09T13:55:36.744Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabc6b04fd30a2ac31c2b3"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/新增",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/create",
+    createdAt: ISODate("2023-07-09T13:55:55.853Z"),
+    updatedAt: ISODate("2023-07-09T13:55:55.853Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabc6c04fd30a2ac31c2b9"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-09T13:55:56.412Z"),
+    updatedAt: ISODate("2023-07-09T13:55:56.412Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabcb4daf0af89627f72b3"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/更新",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/update",
+    createdAt: ISODate("2023-07-09T13:57:08.954Z"),
+    updatedAt: ISODate("2023-07-09T13:57:08.954Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabcb5daf0af89627f72b9"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-09T13:57:09.186Z"),
+    updatedAt: ISODate("2023-07-09T13:57:09.186Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabcd4daf0af89627f72bf"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-09T13:57:40.295Z"),
+    updatedAt: ISODate("2023-07-09T13:57:40.295Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabd04daf0af89627f72c5"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T13:58:28.119Z"),
+    updatedAt: ISODate("2023-07-09T13:58:28.119Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabd2bdaf0af89627f72cb"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T13:59:07.931Z"),
+    updatedAt: ISODate("2023-07-09T13:59:07.931Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabd30daf0af89627f72d1"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T13:59:12.758Z"),
+    updatedAt: ISODate("2023-07-09T13:59:12.758Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabd45daf0af89627f72d7"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T13:59:33.056Z"),
+    updatedAt: ISODate("2023-07-09T13:59:33.056Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabd47daf0af89627f72dd"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T13:59:35.691Z"),
+    updatedAt: ISODate("2023-07-09T13:59:35.691Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabd49daf0af89627f72e3"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T13:59:37.985Z"),
+    updatedAt: ISODate("2023-07-09T13:59:37.985Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabd4cdaf0af89627f72e9"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T13:59:40.579Z"),
+    updatedAt: ISODate("2023-07-09T13:59:40.579Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabd70daf0af89627f72ef"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T14:00:16.847Z"),
+    updatedAt: ISODate("2023-07-09T14:00:16.847Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabd73daf0af89627f72f5"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T14:00:19.019Z"),
+    updatedAt: ISODate("2023-07-09T14:00:19.019Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabd78daf0af89627f72fd"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T14:00:24.671Z"),
+    updatedAt: ISODate("2023-07-09T14:00:24.671Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabd78daf0af89627f72ff"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T14:00:24.674Z"),
+    updatedAt: ISODate("2023-07-09T14:00:24.674Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabd79daf0af89627f7307"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T14:00:25.379Z"),
+    updatedAt: ISODate("2023-07-09T14:00:25.379Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabd79daf0af89627f730d"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T14:00:25.674Z"),
+    updatedAt: ISODate("2023-07-09T14:00:25.674Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabd7bdaf0af89627f7315"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T14:00:27.513Z"),
+    updatedAt: ISODate("2023-07-09T14:00:27.513Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabd7bdaf0af89627f7317"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T14:00:27.514Z"),
+    updatedAt: ISODate("2023-07-09T14:00:27.514Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabd7fdaf0af89627f731f"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T14:00:31.743Z"),
+    updatedAt: ISODate("2023-07-09T14:00:31.743Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabd80daf0af89627f7325"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T14:00:32.013Z"),
+    updatedAt: ISODate("2023-07-09T14:00:32.013Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabd90daf0af89627f732b"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T14:00:48.297Z"),
+    updatedAt: ISODate("2023-07-09T14:00:48.297Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabd9adaf0af89627f7331"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/更新",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/update",
+    createdAt: ISODate("2023-07-09T14:00:58.292Z"),
+    updatedAt: ISODate("2023-07-09T14:00:58.292Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabd9adaf0af89627f7337"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T14:00:58.815Z"),
+    updatedAt: ISODate("2023-07-09T14:00:58.815Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabd9cdaf0af89627f733d"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T14:01:00.813Z"),
+    updatedAt: ISODate("2023-07-09T14:01:00.813Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabd9fdaf0af89627f7343"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T14:01:03.245Z"),
+    updatedAt: ISODate("2023-07-09T14:01:03.245Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabdb6daf0af89627f7349"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T14:01:26.989Z"),
+    updatedAt: ISODate("2023-07-09T14:01:26.989Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabdc6daf0af89627f734f"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/新增",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/create",
+    createdAt: ISODate("2023-07-09T14:01:42.47Z"),
+    updatedAt: ISODate("2023-07-09T14:01:42.47Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabdd6daf0af89627f7354"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T14:01:58.047Z"),
+    updatedAt: ISODate("2023-07-09T14:01:58.047Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabde3daf0af89627f735a"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/新增",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/create",
+    createdAt: ISODate("2023-07-09T14:02:11.684Z"),
+    updatedAt: ISODate("2023-07-09T14:02:11.684Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabdf4daf0af89627f735f"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T14:02:28.165Z"),
+    updatedAt: ISODate("2023-07-09T14:02:28.165Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabe6954f0fc51a06fff38"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T14:04:25.626Z"),
+    updatedAt: ISODate("2023-07-09T14:04:25.626Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabe6c54f0fc51a06fff3e"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/删除",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/delete",
+    createdAt: ISODate("2023-07-09T14:04:28.766Z"),
+    updatedAt: ISODate("2023-07-09T14:04:28.766Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabe8254f0fc51a06fff43"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T14:04:50.305Z"),
+    updatedAt: ISODate("2023-07-09T14:04:50.305Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabe8654f0fc51a06fff49"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T14:04:54.427Z"),
+    updatedAt: ISODate("2023-07-09T14:04:54.427Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabe8754f0fc51a06fff4f"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T14:04:55.727Z"),
+    updatedAt: ISODate("2023-07-09T14:04:55.727Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabf2028f413f08d51cbf7"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T14:07:28.776Z"),
+    updatedAt: ISODate("2023-07-09T14:07:28.776Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabf3d28f413f08d51cbfd"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/新增",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/create",
+    createdAt: ISODate("2023-07-09T14:07:57.599Z"),
+    updatedAt: ISODate("2023-07-09T14:07:57.599Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabf3d28f413f08d51cc04"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T14:07:57.958Z"),
+    updatedAt: ISODate("2023-07-09T14:07:57.958Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabf4028f413f08d51cc0a"),
+    operator: "超级管理员",
+    operatorId: "64a422036f4197cfc70375de",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T14:08:00.721Z"),
+    updatedAt: ISODate("2023-07-09T14:08:00.721Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabf4f28f413f08d51cc0e"),
+    operator: "admin",
+    operatorId: "-",
+    module: "登录",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/login",
+    createdAt: ISODate("2023-07-09T14:08:15.629Z"),
+    updatedAt: ISODate("2023-07-09T14:08:15.629Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabf5328f413f08d51cc11"),
+    operator: "admin",
+    operatorId: "-",
+    module: "登录",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/login",
+    createdAt: ISODate("2023-07-09T14:08:19.733Z"),
+    updatedAt: ISODate("2023-07-09T14:08:19.733Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabf5928f413f08d51cc13"),
+    operator: "admin",
+    operatorId: "-",
+    module: "登录",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/login",
+    createdAt: ISODate("2023-07-09T14:08:25.46Z"),
+    updatedAt: ISODate("2023-07-09T14:08:25.46Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabf6228f413f08d51cc1a"),
+    operator: "ZY·Admin",
+    operatorId: "64aabf3d28f413f08d51cc00",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T14:08:34.081Z"),
+    updatedAt: ISODate("2023-07-09T14:08:34.081Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabf6328f413f08d51cc20"),
+    operator: "ZY·Admin",
+    operatorId: "64aabf3d28f413f08d51cc00",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T14:08:35.98Z"),
+    updatedAt: ISODate("2023-07-09T14:08:35.98Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabf6528f413f08d51cc26"),
+    operator: "ZY·Admin",
+    operatorId: "64aabf3d28f413f08d51cc00",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-09T14:08:37.318Z"),
+    updatedAt: ISODate("2023-07-09T14:08:37.318Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabf6628f413f08d51cc2c"),
+    operator: "ZY·Admin",
+    operatorId: "64aabf3d28f413f08d51cc00",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T14:08:38.272Z"),
+    updatedAt: ISODate("2023-07-09T14:08:38.272Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabf6928f413f08d51cc32"),
+    operator: "ZY·Admin",
+    operatorId: "64aabf3d28f413f08d51cc00",
+    module: "系统管理/用户管理/更新",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/update",
+    createdAt: ISODate("2023-07-09T14:08:41.281Z"),
+    updatedAt: ISODate("2023-07-09T14:08:41.281Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabf6928f413f08d51cc38"),
+    operator: "ZY·Admin",
+    operatorId: "64aabf3d28f413f08d51cc00",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T14:08:41.478Z"),
+    updatedAt: ISODate("2023-07-09T14:08:41.478Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabf7328f413f08d51cc3c"),
+    operator: "test",
+    operatorId: "-",
+    module: "登录",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/login",
+    createdAt: ISODate("2023-07-09T14:08:51.843Z"),
+    updatedAt: ISODate("2023-07-09T14:08:51.843Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabfd028f413f08d51cc3f"),
+    operator: "test",
+    operatorId: "-",
+    module: "登录",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/login",
+    createdAt: ISODate("2023-07-09T14:10:24.758Z"),
+    updatedAt: ISODate("2023-07-09T14:10:24.758Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aabfe728f413f08d51cc42"),
+    operator: "test",
+    operatorId: "-",
+    module: "登录",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/login",
+    createdAt: ISODate("2023-07-09T14:10:47.369Z"),
+    updatedAt: ISODate("2023-07-09T14:10:47.369Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac00028f413f08d51cc45"),
+    operator: "test",
+    operatorId: "-",
+    module: "登录",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/login",
+    createdAt: ISODate("2023-07-09T14:11:12.514Z"),
+    updatedAt: ISODate("2023-07-09T14:11:12.514Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac03828f413f08d51cc48"),
+    operator: "visitor",
+    operatorId: "-",
+    module: "注册",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/register",
+    createdAt: ISODate("2023-07-09T14:12:08.929Z"),
+    updatedAt: ISODate("2023-07-09T14:12:08.929Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac04828f413f08d51cc4b"),
+    operator: "visitor1",
+    operatorId: "-",
+    module: "注册",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/register",
+    createdAt: ISODate("2023-07-09T14:12:24.78Z"),
+    updatedAt: ISODate("2023-07-09T14:12:24.78Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac129d66a54489246f9ab"),
+    operator: "visitor1",
+    operatorId: "-",
+    module: "登录",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/login",
+    createdAt: ISODate("2023-07-09T14:16:09.994Z"),
+    updatedAt: ISODate("2023-07-09T14:16:09.994Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac13cd66a54489246f9ad"),
+    operator: "visitor1",
+    operatorId: "-",
+    module: "登录",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/login",
+    createdAt: ISODate("2023-07-09T14:16:28.521Z"),
+    updatedAt: ISODate("2023-07-09T14:16:28.521Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac172d66a54489246f9b1"),
+    operator: "visitor1",
+    operatorId: "-",
+    module: "登录",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/login",
+    createdAt: ISODate("2023-07-09T14:17:22.178Z"),
+    updatedAt: ISODate("2023-07-09T14:17:22.178Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac174d66a54489246f9b5"),
+    operator: "visitor1",
+    operatorId: "-",
+    module: "登录",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/login",
+    createdAt: ISODate("2023-07-09T14:17:24.505Z"),
+    updatedAt: ISODate("2023-07-09T14:17:24.505Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac189d66a54489246f9b9"),
+    operator: "admin",
+    operatorId: "-",
+    module: "登录",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/login",
+    createdAt: ISODate("2023-07-09T14:17:45.521Z"),
+    updatedAt: ISODate("2023-07-09T14:17:45.521Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac193d66a54489246f9bc"),
+    operator: "visitor",
+    operatorId: "-",
+    module: "登录",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/login",
+    createdAt: ISODate("2023-07-09T14:17:55.449Z"),
+    updatedAt: ISODate("2023-07-09T14:17:55.449Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac19fd66a54489246f9c1"),
+    operator: "visitor1",
+    operatorId: "-",
+    module: "登录",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/login",
+    createdAt: ISODate("2023-07-09T14:18:07.638Z"),
+    updatedAt: ISODate("2023-07-09T14:18:07.638Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac1f1b8725e0dcd3e34c8"),
+    operator: "visitor1",
+    operatorId: "-",
+    module: "登录",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/login",
+    createdAt: ISODate("2023-07-09T14:19:29.135Z"),
+    updatedAt: ISODate("2023-07-09T14:19:29.135Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac1f5b8725e0dcd3e34ca"),
+    operator: "visitor1",
+    operatorId: "-",
+    module: "登录",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/login",
+    createdAt: ISODate("2023-07-09T14:19:33.423Z"),
+    updatedAt: ISODate("2023-07-09T14:19:33.423Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac2aee9b9fd61bcfd9fbc"),
+    operator: "forst",
+    operatorId: "-",
+    module: "注册",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/register",
+    createdAt: ISODate("2023-07-09T14:22:38.729Z"),
+    updatedAt: ISODate("2023-07-09T14:22:38.729Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac33fdfb1324b38f9b03b"),
+    operator: "forst",
+    operatorId: "-",
+    module: "登录",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/login",
+    createdAt: ISODate("2023-07-09T14:25:03.223Z"),
+    updatedAt: ISODate("2023-07-09T14:25:03.223Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac343dfb1324b38f9b03d"),
+    operator: "forst",
+    operatorId: "-",
+    module: "登录",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/login",
+    createdAt: ISODate("2023-07-09T14:25:07.135Z"),
+    updatedAt: ISODate("2023-07-09T14:25:07.135Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac358dfb1324b38f9b044"),
+    operator: "我是来注册的呢",
+    operatorId: "64aac2aee9b9fd61bcfd9fbf",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-09T14:25:28.527Z"),
+    updatedAt: ISODate("2023-07-09T14:25:28.527Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac375dfb1324b38f9b052"),
+    operator: "我是来注册的呢",
+    operatorId: "64aac2aee9b9fd61bcfd9fbf",
+    module: "系统管理/权限管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/permissions/list",
+    createdAt: ISODate("2023-07-09T14:25:57.02Z"),
+    updatedAt: ISODate("2023-07-09T14:25:57.02Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac385dfb1324b38f9b056"),
+    operator: "admin",
+    operatorId: "-",
+    module: "登录",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/login",
+    createdAt: ISODate("2023-07-09T14:26:13.06Z"),
+    updatedAt: ISODate("2023-07-09T14:26:13.06Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac389dfb1324b38f9b059"),
+    operator: "admin",
+    operatorId: "-",
+    module: "登录",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/auth/login",
+    createdAt: ISODate("2023-07-09T14:26:17.895Z"),
+    updatedAt: ISODate("2023-07-09T14:26:17.895Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac38fdfb1324b38f9b060"),
+    operator: "ZY·Admin",
+    operatorId: "64aabf3d28f413f08d51cc00",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T14:26:23.792Z"),
+    updatedAt: ISODate("2023-07-09T14:26:23.792Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac392dfb1324b38f9b066"),
+    operator: "ZY·Admin",
+    operatorId: "64aabf3d28f413f08d51cc00",
+    module: "系统管理/用户管理/更新",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/update",
+    createdAt: ISODate("2023-07-09T14:26:26.544Z"),
+    updatedAt: ISODate("2023-07-09T14:26:26.544Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac392dfb1324b38f9b06c"),
+    operator: "ZY·Admin",
+    operatorId: "64aabf3d28f413f08d51cc00",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T14:26:26.745Z"),
+    updatedAt: ISODate("2023-07-09T14:26:26.745Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac4349c1a4caba5b33d97"),
+    operator: "ZY·Admin",
+    operatorId: "64aabf3d28f413f08d51cc00",
+    module: "系统管理/用户管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/users/list",
+    createdAt: ISODate("2023-07-09T14:29:08.055Z"),
+    updatedAt: ISODate("2023-07-09T14:29:08.055Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac4359c1a4caba5b33d9d"),
+    operator: "ZY·Admin",
+    operatorId: "64aabf3d28f413f08d51cc00",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T14:29:09.489Z"),
+    updatedAt: ISODate("2023-07-09T14:29:09.489Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac4399c1a4caba5b33da3"),
+    operator: "ZY·Admin",
+    operatorId: "64aabf3d28f413f08d51cc00",
+    module: "系统管理/角色管理/删除",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/delete",
+    createdAt: ISODate("2023-07-09T14:29:13.073Z"),
+    updatedAt: ISODate("2023-07-09T14:29:13.073Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac4499c1a4caba5b33da7"),
+    operator: "ZY·Admin",
+    operatorId: "64aabf3d28f413f08d51cc00",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T14:29:29.077Z"),
+    updatedAt: ISODate("2023-07-09T14:29:29.077Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac4679c1a4caba5b33dad"),
+    operator: "ZY·Admin",
+    operatorId: "64aabf3d28f413f08d51cc00",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T14:29:59.326Z"),
+    updatedAt: ISODate("2023-07-09T14:29:59.326Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac47a9c1a4caba5b33db3"),
+    operator: "ZY·Admin",
+    operatorId: "64aabf3d28f413f08d51cc00",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T14:30:18.813Z"),
+    updatedAt: ISODate("2023-07-09T14:30:18.813Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac47d9c1a4caba5b33db9"),
+    operator: "ZY·Admin",
+    operatorId: "64aabf3d28f413f08d51cc00",
+    module: "系统管理/角色管理/删除",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/delete",
+    createdAt: ISODate("2023-07-09T14:30:21.273Z"),
+    updatedAt: ISODate("2023-07-09T14:30:21.273Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac4b53483d05329604617"),
+    operator: "ZY·Admin",
+    operatorId: "64aabf3d28f413f08d51cc00",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T14:31:17.437Z"),
+    updatedAt: ISODate("2023-07-09T14:31:17.437Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac4b83483d0532960461d"),
+    operator: "ZY·Admin",
+    operatorId: "64aabf3d28f413f08d51cc00",
+    module: "系统管理/角色管理/删除",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/delete",
+    createdAt: ISODate("2023-07-09T14:31:20.499Z"),
+    updatedAt: ISODate("2023-07-09T14:31:20.499Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac4bc3483d05329604622"),
+    operator: "ZY·Admin",
+    operatorId: "64aabf3d28f413f08d51cc00",
+    module: "系统管理/角色管理/删除",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/delete",
+    createdAt: ISODate("2023-07-09T14:31:24.135Z"),
+    updatedAt: ISODate("2023-07-09T14:31:24.135Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac4c13483d05329604627"),
+    operator: "ZY·Admin",
+    operatorId: "64aabf3d28f413f08d51cc00",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T14:31:29.281Z"),
+    updatedAt: ISODate("2023-07-09T14:31:29.281Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac4c43483d0532960462d"),
+    operator: "ZY·Admin",
+    operatorId: "64aabf3d28f413f08d51cc00",
+    module: "系统管理/角色管理/删除",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/delete",
+    createdAt: ISODate("2023-07-09T14:31:32.096Z"),
+    updatedAt: ISODate("2023-07-09T14:31:32.096Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac4c73483d05329604632"),
+    operator: "ZY·Admin",
+    operatorId: "64aabf3d28f413f08d51cc00",
+    module: "系统管理/角色管理/删除",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/delete",
+    createdAt: ISODate("2023-07-09T14:31:35.491Z"),
+    updatedAt: ISODate("2023-07-09T14:31:35.491Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac4d43483d05329604637"),
+    operator: "ZY·Admin",
+    operatorId: "64aabf3d28f413f08d51cc00",
+    module: "系统管理/角色管理/更新",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/update",
+    createdAt: ISODate("2023-07-09T14:31:48.597Z"),
+    updatedAt: ISODate("2023-07-09T14:31:48.597Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac4d73483d0532960463c"),
+    operator: "ZY·Admin",
+    operatorId: "64aabf3d28f413f08d51cc00",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T14:31:51.982Z"),
+    updatedAt: ISODate("2023-07-09T14:31:51.982Z")
+} ]);
+db.getCollection("users_opt_logs").insert([ {
+    _id: ObjectId("64aac4e53483d05329604642"),
+    operator: "ZY·Admin",
+    operatorId: "64aabf3d28f413f08d51cc00",
+    module: "系统管理/角色管理/查询",
+    platform: "Chrome.v114",
+    operatorIP: "0.0.0.0",
+    address: "保留地址",
+    content: "/v1/sys/roles/list",
+    createdAt: ISODate("2023-07-09T14:32:05.913Z"),
+    updatedAt: ISODate("2023-07-09T14:32:05.913Z")
+} ]);
