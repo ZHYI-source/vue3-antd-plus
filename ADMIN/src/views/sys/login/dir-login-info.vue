@@ -10,10 +10,10 @@
           <h2>{{setting.websiteInfo.desc || '开箱即用的中后台管理系统'}}</h2>
           <p style="margin-top: 15px">✨✨✨ 欢迎使用 {{setting.websiteInfo.name || 'ZY·Admin'}}@{{ setting.websiteInfo.version || '1.0.0' }}！</p>
           <p style="margin-top: 15px">
-            <a href='https://gitee.com/Z568_568/all-blog-sys/stargazers'><img
-                src='https://gitee.com/Z568_568/all-blog-sys/badge/star.svg?theme=dark' alt='star'/></a>
-            <a href='https://gitee.com/Z568_568/all-blog-sys/members'><img
-                src='https://gitee.com/Z568_568/all-blog-sys/badge/fork.svg?theme=dark' alt='fork'/></a>
+            <a href='https://gitee.com/Z568_568/vue3-antd-plus/stargazers'><img
+                src='https://gitee.com/Z568_568/vue3-antd-plus/badge/star.svg?theme=dark' alt='star'/></a>
+            <a href='https://gitee.com/Z568_568/vue3-antd-plus/members'><img
+                src='https://gitee.com/Z568_568/vue3-antd-plus/badge/fork.svg?theme=dark' alt='fork'/></a>
           </p>
         </a-col>
 

@@ -1,4 +1,4 @@
-# ZY·Admin【完整版】 Vue3-Antd-Plus (文档更新中)
+# Vue3-Antd-Plus (文档更新中)
 
 <p align="center">
   <a href="https://gitee.com/Z568_568/mango-blog-system.git">
@@ -24,6 +24,9 @@ Vue3-Antd-Plus是一个现代化的管理系统，提供了一系列功能丰富
 
  做这个项目主要原因：全网大都是 Vue3 + TypeScript 版本的,so so 决定做一个JavaScript版本的供大家使用
 
+<img  src="doc/Vue3-Antd-Plus.png">
+
+
 ---
 
 
@@ -41,7 +44,27 @@ Vue3-Antd-Plus是一个现代化的管理系统，提供了一系列功能丰富
 <img src="doc/img_5.png" width = "300" height = "150">
 <img src="doc/img_13.png" width = "300" height = "150">
 
- 
+
+### 功能：
+
+*   [x] 前台端- 整体框架已搭建好
+*   [x] 前台端- 接口已经接入
+*   [x] 前台端- axios全局统一错误处理
+*   [x] 管理端- 大屏数据可视化
+*   [x] 管理端- 集成各类富文本编辑器
+*   [x] 管理端- 自定义主题、菜单权限、按钮权限
+*   [x] 管理端- 登录、注册、菜单、tabs顶栏菜单、全局搜索菜单
+*   [x] 管理端- 用户管理、角色管理、权限管理、自定义指令权限判断
+*   [x] 管理端- 用户操作日志项目代码生成器（前后端代码文件）、图标选择器
+*   [x] 管理端- 错误统一处理
+*   [x] 管理端- 表格导入、导出、下载
+*   [x] 管理端- 图片文件音频上传、下载、预览...
+*   [x] 服务端- 项目结构清晰
+*   [x] 服务端- 集成邮件发送、定时器任务、统一响应数据格式
+*   [x] 服务端- JWT验证、接口数据权限验证、角色权限验证
+*   [x] 服务端- express-validator统一的参数验证
+*   [x] 服务端- 接口日志记录、表格解析等等...
+
 
 ## 功能特性
 
@@ -58,7 +81,10 @@ Vue3-Antd-Plus是一个现代化的管理系统，提供了一系列功能丰富
 - 更多....
 
 #### 我的其他开源项目
->[😜博客全栈系统 vue2 + node.js](https://gitee.com/Z568_568/all-blog-sys.git)
+
+> [👆vue3个人主页简历个人博客前后端分离系统](https://gitee.com/Z568_568/ZHOUYI-Homepage.git)
+
+>[😜vue2博客全栈系统 vue2 + node.js](https://gitee.com/Z568_568/all-blog-sys.git)
  
 >[个人文件管理+图床管理服务系统](https://gitee.com/Z568_568/zy.files.sys.git)
  

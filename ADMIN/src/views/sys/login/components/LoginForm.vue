@@ -101,7 +101,10 @@ const getShow = computed(() => {
 
 
 const state = reactive({
-  formState: {},
+  formState: {
+    username: 'admin',
+    password: 'admin',
+  },
   captchaSvg: ''
 })
 

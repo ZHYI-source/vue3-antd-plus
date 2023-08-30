@@ -52,7 +52,7 @@ const frameIn = [
                     requiresAuth: true,
                     perms: ['pages'],
                 },
-                children:[
+                children: [
                     {
                         path: '/dir-max-info',
                         name: 'dir-max-info',
@@ -97,7 +97,7 @@ const frameIn = [
                     requiresAuth: true,
                     perms: ['components'],
                 },
-                children:[
+                children: [
                     {
                         path: '/echart',
                         name: 'echart',
@@ -107,7 +107,7 @@ const frameIn = [
                             requiresAuth: true,
                             perms: ['components:echart'],
                         },
-                        children:[
+                        children: [
                             {
                                 path: '/guizhouMap',
                                 name: 'guizhouMap',
@@ -175,7 +175,7 @@ const frameIn = [
                             requiresAuth: true,
                             perms: ['components:editor'],
                         },
-                        children:[
+                        children: [
                             {
                                 path: '/Tinymce',
                                 name: 'Tinymce',
@@ -303,7 +303,7 @@ const frameIn = [
                     title: '开发工具',
                     requiresAuth: true,
                 },
-                children:[
+                children: [
                     {
                         path: '/dir-codes-info',
                         name: 'dir-codes-info',
@@ -340,6 +340,17 @@ const frameIn = [
                 meta: {
                     frameSrc: 'http://blog.zhouyi.run/#/',
                     title: '博客主页',
+                    requiresAuth: true,
+                    icon: 'wailian_icon',
+                },
+                component: () => import('@/views/sys/frame/dir-frame-info.vue'),
+            },
+            {
+                path: 'homepage',
+                name: 'homepage',
+                meta: {
+                    frameSrc: 'http://www.zhouyi.run/#/',
+                    title: '个人主页',
                     requiresAuth: true,
                     icon: 'wailian_icon',
                 },
